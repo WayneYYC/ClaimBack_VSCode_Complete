@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101d35"><title>ClaimBack — AI Chargeback Investigation</title>
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-mark">↗</span><div><strong>claimback<span class="brand-dot">.</span></strong><small>FINANCIAL INTELLIGENCE</small></div></div>
+    <div class="workspace"><span class="workspace-avatar">C</span><div><strong>ClaimBack Labs</strong><small>Sandbox workspace</small></div><span class="chevron">⌄</span></div>
+    <p class="nav-label">WORKSPACE</p>
+    <nav aria-label="Main navigation"><button class="nav-btn active" data-view="overview"><span>▦</span> Overview</button><button class="nav-btn" data-view="disputes"><span>▤</span> Disputes <em id="navCount">60</em></button><button class="nav-btn" data-view="activity"><span>◷</span> Agent activity</button><button class="nav-btn" data-view="lab"><span>⌁</span> Reliability lab</button></nav>
+    <p class="nav-label spaced">INTEGRATIONS</p>
+    <div class="integration"><span class="connection-indicator" id="nicDot"></span><div><strong>Nicrron AI</strong><small id="nicConnection">Checking...</small></div></div>
+    <div class="integration"><span class="connection-indicator" id="prismDot"></span><div><strong>PRISM</strong><small id="prismConnection">Checking...</small></div></div>
+    <div class="sidebar-bottom"><div class="sandbox-box"><span>◈</span><strong>Safe by design</strong><p>Fictional records only. No payments or real dispute submissions.</p></div><div class="side-footer">Money Talks 2 · NYC 2026</div></div>
+  </aside>
+  <main class="main">
+    <div class="topbar"><div class="breadcrumb">Workspace <span>›</span> <strong id="breadcrumb">Overview</strong></div><div class="top-right"><span class="live-badge"><i></i> SANDBOX</span><span class="avatar">CT</span></div></div>
+    <div class="content">
+      <div class="page-head"><div><p class="eyebrow">AI-POWERED DISPUTE OPERATIONS</p><h1 id="pageTitle">Dispute overview</h1><p class="page-subtitle" id="pageSubtitle">Investigate faster. Respond with evidence. Keep humans in control.</p></div><button class="outline action-top" id="refreshButton">↻ &nbsp; Refresh</button></div>
+      <div id="overviewView" class="view">
+        <section class="metrics">
+          <div class="metric-card"><div class="metric-title">Open disputes <span class="mini-icon">▤</span></div><div class="metric-value" id="totalDisputes">—</div><div class="metric-bottom">Cases available for review</div></div>
+          <div class="metric-card"><div class="metric-title">Amount at risk <span class="mini-icon">＄</span></div><div class="metric-value" id="totalAmount">—</div><div class="metric-bottom">Across fictional transactions</div></div>
+          <div class="metric-card"><div class="metric-title">Investigated <span class="mini-icon">✓</span></div><div class="metric-value" id="investigated">—</div><div class="metric-bottom"><span class="small-success">●</span> With completed case reports</div></div>
+          <div class="metric-card"><div class="metric-title">Need attention <span class="mini-icon">⚑</span></div><div class="metric-value" id="needsAttention">—</div><div class="metric-bottom">Scenarios requiring further checks</div></div>
+        </section>
+        <section class="hero-card"><div><span class="hero-kicker">INTRODUCING YOUR AI INVESTIGATOR</span><h2>From dispute to decision,<br><span>backed by evidence.</span></h2><p>Unify orders, payments, delivery proofs and customer conversations. Produce a clear, auditable response draft in seconds.</p><button class="white-button" id="heroInvestigate">Investigate a case <span>↗</span></button></div><div class="hero-art" aria-hidden="true"><div class="art-card art-card-top"><span>◉</span> Evidence verified <b>✓</b></div><div class="art-main"><div class="art-bar"></div><div class="art-line thick"></div><div class="art-line"></div><div class="art-line short"></div><div class="art-pill">Ready for review</div></div><div class="art-card art-card-bottom"><span>✳</span> AI investigation <b>8 steps</b></div></div></section>
+        <div class="section-heading"><div><h2>Recent disputes</h2><p>Case-level evidence and decisions</p></div><button class="text-button" data-view="disputes">View all disputes &nbsp; ↗</button></div>
+        <div class="table-card"><div class="table-scroll"><table><thead><tr><th>DISPUTE ID</th><th>REASON</th><th>AMOUNT</th><th>CASE STATUS</th><th>RESPONSE DUE</th><th></th></tr></thead><tbody id="overviewRows"></tbody></table></div></div>
+      </div>
+      <div id="disputesView" class="view hidden">
+        <div class="list-controls"><label class="search-wrap"><span>⌕</span><input id="search" placeholder="Search case ID, product or scenario" aria-label="Search disputes"></label><select id="filter" aria-label="Filter by scenario"><option value="all">All cases</option><option value="delivered">Delivered</option><option value="missing-tracking">Missing tracking</option><option value="not-delivered">Not delivered</option><option value="already-refunded">Already refunded</option><option value="investigated">Investigated</option><option value="failed">Failed runs</option></select><span class="result-count" id="resultCount"></span><button class="outline" id="importButton">＋ Import sample JSON</button><input id="importFile" class="hidden" type="file" accept="application/json,.json" aria-label="Upload a fictional sample dispute JSON"></div>
+        <div class="table-card"><div class="table-scroll"><table><thead><tr><th>DISPUTE ID</th><th>REASON</th><th>AMOUNT</th><th>SCENARIO</th><th>CASE STATUS</th><th>RESPONSE DUE</th><th></th></tr></thead><tbody id="disputesRows"></tbody></table></div></div>
+      </div>
+      <div id="activityView" class="view hidden"><div class="section-heading"><div><h2>Agent activity</h2><p>Actual local execution history. PRISM requires separate verification in its dashboard.</p></div><button class="outline" id="activityRefresh">↻ Refresh</button></div><div class="table-card"><div class="table-scroll"><table><thead><tr><th>RUN</th><th>CASE</th><th>MODE</th><th>VERSION</th><th>RESULT</th><th>PRISM UPLOAD</th><th>TIME</th></tr></thead><tbody id="runsRows"></tbody></table></div></div><div class="note"><strong>PRISM judging note:</strong> Open the PRISM dashboard to independently confirm 6+ recorded tool steps, a triggered alert, and a root-cause cluster. Local timeline entries alone do not count.</div><div id="activityInspector" class="activity-inspector hidden"></div></div>
+      <div id="labView" class="view hidden">
+        <section class="lab-hero">
+          <div><span class="hero-kicker">MONEY OPERATIONS • JUDGING CHECKLIST</span><h2>Show the failure.<br><span>Prove the fix.</span></h2><p>Reproduce the intentionally broken tracking lookup on three fictional chargebacks, then run the exact same inputs on the fixed workflow.</p></div>
+          <div class="lab-hero-chip">3 PRISM proofs to verify</div>
+        </section>
+        <div class="lab-checks">
+          <div class="lab-check"><span>01</span><strong>Sessions</strong><p>Run v2 in Live mode. Open PRISM Sessions → Steps and verify eight actual workflow spans.</p></div>
+          <div class="lab-check"><span>02</span><strong>Alert</strong><p>Configure a PRISM error-rate alert in the dashboard; then trigger failing v1 runs and verify it fires.</p></div>
+          <div class="lab-check"><span>03</span><strong>Root Cause</strong><p>Run v1 on CB-0005 / 0010 / 0015, check the error cluster, then rerun identical cases using v2.</p></div>
+        </div>
+        <section class="lab-panel">
+          <div class="lab-panel-top"><div><h3>Regression test bench</h3><p>Three real endpoint calls per batch. Demo calls are local; Live uses Nicrron when the workflow reaches the writing step and attempts PRISM export.</p></div><label class="lab-mode">Execution mode<select id="labMode"><option value="demo">Demo — local</option><option value="live">Live — Nicrron + PRISM</option></select></label></div>
+          <div class="lab-actions"><button class="primary" id="labV1">01 · Run v1 failures</button><button class="outline" id="labV2">02 · Verify v2 fix</button><span id="labProgress" class="lab-progress">Ready to test</span></div>
+          <div id="labResults" class="lab-results"><div class="report-empty"><b>No batch run yet</b>Select a version above to execute three cases with the same inputs.</div></div>
+        </section>
+        <div class="note"><strong>Important:</strong> A local success indicator does not prove PRISM ingest or alerting. After Live runs, open <a href="https://prism.blockconvey.com" target="_blank" rel="noopener">PRISM console ↗</a> and verify the real Sessions, Alerts and Intelligence cluster. Root Cause clustering may require more runs.</div>
+      </div>
+    </div>
+  </main>
+</div>
+<div class="overlay hidden" id="overlay" aria-hidden="true"><div class="drawer" role="dialog" aria-modal="true" aria-label="Dispute details"><div class="drawer-header"><div><p class="eyebrow">DISPUTE INVESTIGATION</p><h2 id="drawerTitle">Case</h2></div><button class="close-btn" id="closeDrawer" aria-label="Close dialog">×</button></div><div class="drawer-body"><div id="caseInfo"></div><div class="tabs"><button class="tab active" data-tab="evidence">Evidence</button><button class="tab" data-tab="report">AI report</button><button class="tab" data-tab="execution">Execution</button></div><section id="evidenceTab" class="tab-page"></section><section id="reportTab" class="tab-page hidden"></section><section id="executionTab" class="tab-page hidden"></section></div><div class="drawer-footer"><div class="mode-choice"><label for="executionMode">Agent mode / version</label><select id="executionMode"><option value="demo">Demo (template)</option><option value="live">Live (Nicrron + optional PRISM)</option></select><select id="executionVersion" aria-label="Agent version"><option value="v2">v2 — Fixed</option><option value="v1">v1 — Reproduce bug</option></select></div><button class="primary" id="investigateButton">✦ &nbsp; Run investigation</button><div class="footer-hint" id="footerHint">AI mode requires Nicrron credentials.</div></div></div></div>
+<div class="toast hidden" id="toast" role="status"></div>
+<script src="/assets/app.js" defer></script>
+</body>
+</html>

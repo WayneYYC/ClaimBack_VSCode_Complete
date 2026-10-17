@@ -1,0 +1,32 @@
+{
+  "fictional": true,
+  "reason": "product_not_received",
+  "amount_usd": 249.99,
+  "opened_at": "2026-10-17T09:00:00",
+  "due_date": "2026-10-27",
+  "order": {
+    "record_id": "ORD-CUSTOM-01",
+    "ordered_at": "2026-10-09T10:00:00",
+    "total_usd": 249.99,
+    "product": "Sample wireless headphones"
+  },
+  "payment": {
+    "record_id": "PAY-CUSTOM-01",
+    "status": "captured",
+    "amount_usd": 249.99,
+    "refunded": false
+  },
+  "shipping": {
+    "record_id": "SHIP-CUSTOM-01",
+    "status": "delivered",
+    "address_match": true,
+    "delivery_date": "2026-10-12T16:00:00",
+    "tracking_number": "DEMO-TRACK-CUSTOM-01"
+  },
+  "support": [
+    {
+      "record_id": "CHAT-CUSTOM-01",
+      "message": "Customer claims the parcel was not received."
+    }
+  ]
+}

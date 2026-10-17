@@ -1,0 +1,1970 @@
+[
+  {
+    "dispute_id": "CB-0001",
+    "reason": "product_not_received",
+    "scenario": "delivered",
+    "amount_usd": 176,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0001",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 176,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0001",
+      "status": "captured",
+      "amount_usd": 176,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-001",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-12T14:00:00",
+      "tracking_number": "MOCK-TRACK-0001"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0001",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0002",
+    "reason": "product_not_received",
+    "scenario": "not-delivered",
+    "amount_usd": 177,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0002",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 177,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0002",
+      "status": "captured",
+      "amount_usd": 177,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-002",
+      "status": "in_transit",
+      "address_match": true,
+      "delivery_date": null,
+      "tracking_number": "MOCK-TRACK-0002"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0002",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0003",
+    "reason": "product_not_received",
+    "scenario": "late-delivery",
+    "amount_usd": 178,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0003",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 178,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0003",
+      "status": "captured",
+      "amount_usd": 178,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-003",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-17T14:00:00",
+      "tracking_number": "MOCK-TRACK-0003"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0003",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0004",
+    "reason": "product_not_received",
+    "scenario": "already-refunded",
+    "amount_usd": 179,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0004",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 179,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0004",
+      "status": "captured",
+      "amount_usd": 179,
+      "refunded": true
+    },
+    "shipping": {
+      "record_id": "SHIP-004",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-12T14:00:00",
+      "tracking_number": "MOCK-TRACK-0004"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0004",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0005",
+    "reason": "product_not_received",
+    "scenario": "missing-tracking",
+    "amount_usd": 180,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0005",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 180,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0005",
+      "status": "captured",
+      "amount_usd": 180,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-005",
+      "status": "in_transit",
+      "address_match": false,
+      "delivery_date": null
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0005",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0006",
+    "reason": "product_not_received",
+    "scenario": "delivered",
+    "amount_usd": 181,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0006",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 181,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0006",
+      "status": "captured",
+      "amount_usd": 181,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-006",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-12T14:00:00",
+      "tracking_number": "MOCK-TRACK-0006"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0006",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0007",
+    "reason": "product_not_received",
+    "scenario": "not-delivered",
+    "amount_usd": 182,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0007",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 182,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0007",
+      "status": "captured",
+      "amount_usd": 182,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-007",
+      "status": "in_transit",
+      "address_match": true,
+      "delivery_date": null,
+      "tracking_number": "MOCK-TRACK-0007"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0007",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0008",
+    "reason": "product_not_received",
+    "scenario": "late-delivery",
+    "amount_usd": 183,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0008",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 183,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0008",
+      "status": "captured",
+      "amount_usd": 183,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-008",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-17T14:00:00",
+      "tracking_number": "MOCK-TRACK-0008"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0008",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0009",
+    "reason": "product_not_received",
+    "scenario": "already-refunded",
+    "amount_usd": 184,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0009",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 184,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0009",
+      "status": "captured",
+      "amount_usd": 184,
+      "refunded": true
+    },
+    "shipping": {
+      "record_id": "SHIP-009",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-12T14:00:00",
+      "tracking_number": "MOCK-TRACK-0009"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0009",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0010",
+    "reason": "product_not_received",
+    "scenario": "missing-tracking",
+    "amount_usd": 185,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0010",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 185,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0010",
+      "status": "captured",
+      "amount_usd": 185,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-010",
+      "status": "in_transit",
+      "address_match": false,
+      "delivery_date": null
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0010",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0011",
+    "reason": "product_not_received",
+    "scenario": "delivered",
+    "amount_usd": 186,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0011",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 186,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0011",
+      "status": "captured",
+      "amount_usd": 186,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-011",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-12T14:00:00",
+      "tracking_number": "MOCK-TRACK-0011"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0011",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0012",
+    "reason": "product_not_received",
+    "scenario": "not-delivered",
+    "amount_usd": 187,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0012",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 187,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0012",
+      "status": "captured",
+      "amount_usd": 187,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-012",
+      "status": "in_transit",
+      "address_match": true,
+      "delivery_date": null,
+      "tracking_number": "MOCK-TRACK-0012"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0012",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0013",
+    "reason": "product_not_received",
+    "scenario": "late-delivery",
+    "amount_usd": 188,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0013",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 188,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0013",
+      "status": "captured",
+      "amount_usd": 188,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-013",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-17T14:00:00",
+      "tracking_number": "MOCK-TRACK-0013"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0013",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0014",
+    "reason": "product_not_received",
+    "scenario": "already-refunded",
+    "amount_usd": 189,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0014",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 189,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0014",
+      "status": "captured",
+      "amount_usd": 189,
+      "refunded": true
+    },
+    "shipping": {
+      "record_id": "SHIP-014",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-12T14:00:00",
+      "tracking_number": "MOCK-TRACK-0014"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0014",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0015",
+    "reason": "product_not_received",
+    "scenario": "missing-tracking",
+    "amount_usd": 190,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0015",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 190,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0015",
+      "status": "captured",
+      "amount_usd": 190,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-015",
+      "status": "in_transit",
+      "address_match": false,
+      "delivery_date": null
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0015",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0016",
+    "reason": "product_not_received",
+    "scenario": "delivered",
+    "amount_usd": 191,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0016",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 191,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0016",
+      "status": "captured",
+      "amount_usd": 191,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-016",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-12T14:00:00",
+      "tracking_number": "MOCK-TRACK-0016"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0016",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0017",
+    "reason": "product_not_received",
+    "scenario": "not-delivered",
+    "amount_usd": 192,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0017",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 192,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0017",
+      "status": "captured",
+      "amount_usd": 192,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-017",
+      "status": "in_transit",
+      "address_match": true,
+      "delivery_date": null,
+      "tracking_number": "MOCK-TRACK-0017"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0017",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0018",
+    "reason": "product_not_received",
+    "scenario": "late-delivery",
+    "amount_usd": 193,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0018",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 193,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0018",
+      "status": "captured",
+      "amount_usd": 193,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-018",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-17T14:00:00",
+      "tracking_number": "MOCK-TRACK-0018"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0018",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0019",
+    "reason": "product_not_received",
+    "scenario": "already-refunded",
+    "amount_usd": 194,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0019",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 194,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0019",
+      "status": "captured",
+      "amount_usd": 194,
+      "refunded": true
+    },
+    "shipping": {
+      "record_id": "SHIP-019",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-12T14:00:00",
+      "tracking_number": "MOCK-TRACK-0019"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0019",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0020",
+    "reason": "product_not_received",
+    "scenario": "missing-tracking",
+    "amount_usd": 195,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0020",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 195,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0020",
+      "status": "captured",
+      "amount_usd": 195,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-020",
+      "status": "in_transit",
+      "address_match": false,
+      "delivery_date": null
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0020",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0021",
+    "reason": "product_not_received",
+    "scenario": "delivered",
+    "amount_usd": 196,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0021",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 196,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0021",
+      "status": "captured",
+      "amount_usd": 196,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-021",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-12T14:00:00",
+      "tracking_number": "MOCK-TRACK-0021"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0021",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0022",
+    "reason": "product_not_received",
+    "scenario": "not-delivered",
+    "amount_usd": 197,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0022",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 197,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0022",
+      "status": "captured",
+      "amount_usd": 197,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-022",
+      "status": "in_transit",
+      "address_match": true,
+      "delivery_date": null,
+      "tracking_number": "MOCK-TRACK-0022"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0022",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0023",
+    "reason": "product_not_received",
+    "scenario": "late-delivery",
+    "amount_usd": 198,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0023",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 198,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0023",
+      "status": "captured",
+      "amount_usd": 198,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-023",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-17T14:00:00",
+      "tracking_number": "MOCK-TRACK-0023"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0023",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0024",
+    "reason": "product_not_received",
+    "scenario": "already-refunded",
+    "amount_usd": 199,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0024",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 199,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0024",
+      "status": "captured",
+      "amount_usd": 199,
+      "refunded": true
+    },
+    "shipping": {
+      "record_id": "SHIP-024",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-12T14:00:00",
+      "tracking_number": "MOCK-TRACK-0024"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0024",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0025",
+    "reason": "product_not_received",
+    "scenario": "missing-tracking",
+    "amount_usd": 200,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0025",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 200,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0025",
+      "status": "captured",
+      "amount_usd": 200,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-025",
+      "status": "in_transit",
+      "address_match": false,
+      "delivery_date": null
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0025",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0026",
+    "reason": "product_not_received",
+    "scenario": "delivered",
+    "amount_usd": 201,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0026",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 201,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0026",
+      "status": "captured",
+      "amount_usd": 201,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-026",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-12T14:00:00",
+      "tracking_number": "MOCK-TRACK-0026"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0026",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0027",
+    "reason": "product_not_received",
+    "scenario": "not-delivered",
+    "amount_usd": 202,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0027",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 202,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0027",
+      "status": "captured",
+      "amount_usd": 202,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-027",
+      "status": "in_transit",
+      "address_match": true,
+      "delivery_date": null,
+      "tracking_number": "MOCK-TRACK-0027"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0027",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0028",
+    "reason": "product_not_received",
+    "scenario": "late-delivery",
+    "amount_usd": 203,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0028",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 203,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0028",
+      "status": "captured",
+      "amount_usd": 203,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-028",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-17T14:00:00",
+      "tracking_number": "MOCK-TRACK-0028"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0028",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0029",
+    "reason": "product_not_received",
+    "scenario": "already-refunded",
+    "amount_usd": 204,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0029",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 204,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0029",
+      "status": "captured",
+      "amount_usd": 204,
+      "refunded": true
+    },
+    "shipping": {
+      "record_id": "SHIP-029",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-12T14:00:00",
+      "tracking_number": "MOCK-TRACK-0029"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0029",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0030",
+    "reason": "product_not_received",
+    "scenario": "missing-tracking",
+    "amount_usd": 205,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0030",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 205,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0030",
+      "status": "captured",
+      "amount_usd": 205,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-030",
+      "status": "in_transit",
+      "address_match": false,
+      "delivery_date": null
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0030",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0031",
+    "reason": "product_not_received",
+    "scenario": "delivered",
+    "amount_usd": 206,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0031",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 206,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0031",
+      "status": "captured",
+      "amount_usd": 206,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-031",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-12T14:00:00",
+      "tracking_number": "MOCK-TRACK-0031"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0031",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0032",
+    "reason": "product_not_received",
+    "scenario": "not-delivered",
+    "amount_usd": 207,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0032",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 207,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0032",
+      "status": "captured",
+      "amount_usd": 207,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-032",
+      "status": "in_transit",
+      "address_match": true,
+      "delivery_date": null,
+      "tracking_number": "MOCK-TRACK-0032"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0032",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0033",
+    "reason": "product_not_received",
+    "scenario": "late-delivery",
+    "amount_usd": 208,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0033",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 208,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0033",
+      "status": "captured",
+      "amount_usd": 208,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-033",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-17T14:00:00",
+      "tracking_number": "MOCK-TRACK-0033"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0033",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0034",
+    "reason": "product_not_received",
+    "scenario": "already-refunded",
+    "amount_usd": 209,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0034",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 209,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0034",
+      "status": "captured",
+      "amount_usd": 209,
+      "refunded": true
+    },
+    "shipping": {
+      "record_id": "SHIP-034",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-12T14:00:00",
+      "tracking_number": "MOCK-TRACK-0034"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0034",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0035",
+    "reason": "product_not_received",
+    "scenario": "missing-tracking",
+    "amount_usd": 210,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0035",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 210,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0035",
+      "status": "captured",
+      "amount_usd": 210,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-035",
+      "status": "in_transit",
+      "address_match": false,
+      "delivery_date": null
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0035",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0036",
+    "reason": "product_not_received",
+    "scenario": "delivered",
+    "amount_usd": 211,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0036",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 211,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0036",
+      "status": "captured",
+      "amount_usd": 211,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-036",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-12T14:00:00",
+      "tracking_number": "MOCK-TRACK-0036"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0036",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0037",
+    "reason": "product_not_received",
+    "scenario": "not-delivered",
+    "amount_usd": 212,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0037",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 212,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0037",
+      "status": "captured",
+      "amount_usd": 212,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-037",
+      "status": "in_transit",
+      "address_match": true,
+      "delivery_date": null,
+      "tracking_number": "MOCK-TRACK-0037"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0037",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0038",
+    "reason": "product_not_received",
+    "scenario": "late-delivery",
+    "amount_usd": 213,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0038",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 213,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0038",
+      "status": "captured",
+      "amount_usd": 213,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-038",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-17T14:00:00",
+      "tracking_number": "MOCK-TRACK-0038"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0038",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0039",
+    "reason": "product_not_received",
+    "scenario": "already-refunded",
+    "amount_usd": 214,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0039",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 214,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0039",
+      "status": "captured",
+      "amount_usd": 214,
+      "refunded": true
+    },
+    "shipping": {
+      "record_id": "SHIP-039",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-12T14:00:00",
+      "tracking_number": "MOCK-TRACK-0039"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0039",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0040",
+    "reason": "product_not_received",
+    "scenario": "missing-tracking",
+    "amount_usd": 215,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0040",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 215,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0040",
+      "status": "captured",
+      "amount_usd": 215,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-040",
+      "status": "in_transit",
+      "address_match": false,
+      "delivery_date": null
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0040",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0041",
+    "reason": "product_not_received",
+    "scenario": "delivered",
+    "amount_usd": 216,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0041",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 216,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0041",
+      "status": "captured",
+      "amount_usd": 216,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-041",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-12T14:00:00",
+      "tracking_number": "MOCK-TRACK-0041"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0041",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0042",
+    "reason": "product_not_received",
+    "scenario": "not-delivered",
+    "amount_usd": 217,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0042",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 217,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0042",
+      "status": "captured",
+      "amount_usd": 217,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-042",
+      "status": "in_transit",
+      "address_match": true,
+      "delivery_date": null,
+      "tracking_number": "MOCK-TRACK-0042"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0042",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0043",
+    "reason": "product_not_received",
+    "scenario": "late-delivery",
+    "amount_usd": 218,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0043",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 218,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0043",
+      "status": "captured",
+      "amount_usd": 218,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-043",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-17T14:00:00",
+      "tracking_number": "MOCK-TRACK-0043"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0043",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0044",
+    "reason": "product_not_received",
+    "scenario": "already-refunded",
+    "amount_usd": 219,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0044",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 219,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0044",
+      "status": "captured",
+      "amount_usd": 219,
+      "refunded": true
+    },
+    "shipping": {
+      "record_id": "SHIP-044",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-12T14:00:00",
+      "tracking_number": "MOCK-TRACK-0044"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0044",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0045",
+    "reason": "product_not_received",
+    "scenario": "missing-tracking",
+    "amount_usd": 220,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0045",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 220,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0045",
+      "status": "captured",
+      "amount_usd": 220,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-045",
+      "status": "in_transit",
+      "address_match": false,
+      "delivery_date": null
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0045",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0046",
+    "reason": "product_not_received",
+    "scenario": "delivered",
+    "amount_usd": 221,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0046",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 221,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0046",
+      "status": "captured",
+      "amount_usd": 221,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-046",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-12T14:00:00",
+      "tracking_number": "MOCK-TRACK-0046"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0046",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0047",
+    "reason": "product_not_received",
+    "scenario": "not-delivered",
+    "amount_usd": 222,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0047",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 222,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0047",
+      "status": "captured",
+      "amount_usd": 222,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-047",
+      "status": "in_transit",
+      "address_match": true,
+      "delivery_date": null,
+      "tracking_number": "MOCK-TRACK-0047"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0047",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0048",
+    "reason": "product_not_received",
+    "scenario": "late-delivery",
+    "amount_usd": 223,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0048",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 223,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0048",
+      "status": "captured",
+      "amount_usd": 223,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-048",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-17T14:00:00",
+      "tracking_number": "MOCK-TRACK-0048"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0048",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0049",
+    "reason": "product_not_received",
+    "scenario": "already-refunded",
+    "amount_usd": 224,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0049",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 224,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0049",
+      "status": "captured",
+      "amount_usd": 224,
+      "refunded": true
+    },
+    "shipping": {
+      "record_id": "SHIP-049",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-12T14:00:00",
+      "tracking_number": "MOCK-TRACK-0049"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0049",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0050",
+    "reason": "product_not_received",
+    "scenario": "missing-tracking",
+    "amount_usd": 225,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0050",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 225,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0050",
+      "status": "captured",
+      "amount_usd": 225,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-050",
+      "status": "in_transit",
+      "address_match": false,
+      "delivery_date": null
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0050",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0051",
+    "reason": "product_not_received",
+    "scenario": "delivered",
+    "amount_usd": 226,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0051",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 226,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0051",
+      "status": "captured",
+      "amount_usd": 226,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-051",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-12T14:00:00",
+      "tracking_number": "MOCK-TRACK-0051"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0051",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0052",
+    "reason": "product_not_received",
+    "scenario": "not-delivered",
+    "amount_usd": 227,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0052",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 227,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0052",
+      "status": "captured",
+      "amount_usd": 227,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-052",
+      "status": "in_transit",
+      "address_match": true,
+      "delivery_date": null,
+      "tracking_number": "MOCK-TRACK-0052"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0052",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0053",
+    "reason": "product_not_received",
+    "scenario": "late-delivery",
+    "amount_usd": 228,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0053",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 228,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0053",
+      "status": "captured",
+      "amount_usd": 228,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-053",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-17T14:00:00",
+      "tracking_number": "MOCK-TRACK-0053"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0053",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0054",
+    "reason": "product_not_received",
+    "scenario": "already-refunded",
+    "amount_usd": 229,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0054",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 229,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0054",
+      "status": "captured",
+      "amount_usd": 229,
+      "refunded": true
+    },
+    "shipping": {
+      "record_id": "SHIP-054",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-12T14:00:00",
+      "tracking_number": "MOCK-TRACK-0054"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0054",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0055",
+    "reason": "product_not_received",
+    "scenario": "missing-tracking",
+    "amount_usd": 230,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0055",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 230,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0055",
+      "status": "captured",
+      "amount_usd": 230,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-055",
+      "status": "in_transit",
+      "address_match": false,
+      "delivery_date": null
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0055",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0056",
+    "reason": "product_not_received",
+    "scenario": "delivered",
+    "amount_usd": 231,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0056",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 231,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0056",
+      "status": "captured",
+      "amount_usd": 231,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-056",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-12T14:00:00",
+      "tracking_number": "MOCK-TRACK-0056"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0056",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0057",
+    "reason": "product_not_received",
+    "scenario": "not-delivered",
+    "amount_usd": 232,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0057",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 232,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0057",
+      "status": "captured",
+      "amount_usd": 232,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-057",
+      "status": "in_transit",
+      "address_match": true,
+      "delivery_date": null,
+      "tracking_number": "MOCK-TRACK-0057"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0057",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0058",
+    "reason": "product_not_received",
+    "scenario": "late-delivery",
+    "amount_usd": 233,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0058",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 233,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0058",
+      "status": "captured",
+      "amount_usd": 233,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-058",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-17T14:00:00",
+      "tracking_number": "MOCK-TRACK-0058"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0058",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0059",
+    "reason": "product_not_received",
+    "scenario": "already-refunded",
+    "amount_usd": 234,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0059",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 234,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0059",
+      "status": "captured",
+      "amount_usd": 234,
+      "refunded": true
+    },
+    "shipping": {
+      "record_id": "SHIP-059",
+      "status": "delivered",
+      "address_match": true,
+      "delivery_date": "2026-10-12T14:00:00",
+      "tracking_number": "MOCK-TRACK-0059"
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0059",
+        "message": "Customer reported package not received."
+      }
+    ]
+  },
+  {
+    "dispute_id": "CB-0060",
+    "reason": "product_not_received",
+    "scenario": "missing-tracking",
+    "amount_usd": 235,
+    "opened_at": "2026-10-15T12:00:00",
+    "due_date": "2026-10-25",
+    "order": {
+      "record_id": "ORD-0060",
+      "ordered_at": "2026-10-09T09:00:00",
+      "total_usd": 235,
+      "product": "Sample running shoes"
+    },
+    "payment": {
+      "record_id": "PAY-0060",
+      "status": "captured",
+      "amount_usd": 235,
+      "refunded": false
+    },
+    "shipping": {
+      "record_id": "SHIP-060",
+      "status": "in_transit",
+      "address_match": false,
+      "delivery_date": null
+    },
+    "support": [
+      {
+        "record_id": "CHAT-0060",
+        "message": "Customer reported package not received."
+      }
+    ]
+  }
+]
